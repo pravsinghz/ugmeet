@@ -1,2 +1,2 @@
-# ugmeet
-User Group Meets
+# Microsoft User Group Hyderabad
+## Monthly User Group Meetup
