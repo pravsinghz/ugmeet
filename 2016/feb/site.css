@@ -194,7 +194,7 @@ section .content h2 {
 }
 
 .main #agenda {
-    height: 480px;
+    height: 580px;
     background: #FF5252;
     color: #ffffff;
 }
@@ -219,6 +219,7 @@ section .content h2 {
     text-align: left;
     border: 1px solid #ffffff;
     padding: 10px;
+    line-height: 20px;
 }
 
 .main #agenda .content table td a {
