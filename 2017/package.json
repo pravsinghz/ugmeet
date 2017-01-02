@@ -1,0 +1,15 @@
+{
+  "name": "ug-meet-2017",
+  "version": "1.0.0",
+  "description": "Microsoft Users Group Hyderabad 2017 UG Meet Site",
+  "devDependencies": {
+    "babel-core": "^6.21.0",
+    "babel-preset-es2015": "^6.18.0",
+    "browser-sync": "^2.18.5",
+    "gulp": "^3.9.1",
+    "gulp-pug": "^3.2.0",
+    "gulp-rimraf": "^0.2.1",
+    "gulp-sass": "^3.0.0",
+    "run-sequence": "^1.2.2"
+  }
+}

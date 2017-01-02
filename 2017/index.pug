@@ -1,0 +1,25 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge,chrome=1')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(name='description', content='MUGH, Microsoft Users Group Hyderabad')
+    meta(name='author', content='Microsoft User Group Hyderabad')
+
+    title Microsoft Users Group Hyderabad :: MUGH
+
+    link(rel='icon', href='assets/img/mugh-logo@2x.png')
+
+    // Material Design Lite
+    link(rel='stylesheet', href='https://fonts.googleapis.com/icon?family=Material+Icons', type='text/css')
+    link(rel='stylesheet', href='https://code.getmdl.io/1.3.0/material.blue-red.min.css', type='text/css')
+    script(defer, src='https://code.getmdl.io/1.3.0/material.min.js')
+
+    // Custom CSS
+    link(href='assets/css/site.css', rel='stylesheet', type='text/css')
+
+  body
+    include sections/header.pug
+    include sections/agenda.pug
+    include sections/footer.pug

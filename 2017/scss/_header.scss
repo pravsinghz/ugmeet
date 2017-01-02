@@ -1,0 +1,150 @@
+.site-header {
+  height: 3.5rem;
+  box-shadow: rgba(0, 0, 0, 0.34902) 0 1px 6px;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  background: rgb(255, 255, 255);
+
+  @media only screen and (min-width: 64rem) {
+    height: 5rem;
+  }
+}
+
+.site-header__container {
+  max-width: 61.25rem;
+  margin: 0 auto;
+}
+
+.site-header__title {
+  line-height: 3.5rem;
+  margin-left: 1rem;
+  float: left;
+  font-size: 0;
+  margin-bottom: 0;
+  margin-top: 0;
+
+  @media only screen and (min-width: 64rem) {
+    line-height: 5rem;
+    margin-left: 0;
+  }
+}
+
+.site-header__logo {
+  height: 1.5625rem;
+  margin-right: 0.1875rem;
+
+  @media only screen and (min-width: 64rem) {
+    height: 2rem;
+  }
+}
+
+.site-header__main-nav {
+  height: 3.5rem;
+  float: right;
+  visibility: hidden;
+
+  @media only screen and (min-width: 32rem) {
+    visibility: visible;
+  }
+
+  @media only screen and (min-width: 64rem) {
+    height: 5rem;
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      line-height: 3.5rem;
+      height: 3.5rem;
+      font-size: 0;
+      font-weight: 400;
+      text-transform: uppercase;
+      vertical-align: middle;
+      display: inline-block;
+
+      @media only screen and (min-width: 64rem) {
+        line-height: 5rem;
+        height: 5rem;
+      }
+
+      .nav-link {
+        font-size: 0.75rem;
+        font-weight: normal;
+        color: rgb(132, 132, 132);
+        display: inline-block;
+        padding: 0 0.625rem;
+        text-decoration: none;
+
+        @media only screen and (min-width: 48rem) {
+          font-size: 0.875rem;
+          padding: 0 1rem;
+        }
+
+        &:hover {
+          color: rgb(255,82,82);
+          text-decoration: none;
+          transition: .15s ease-in color;
+        }
+      }
+    }
+  }
+}
+
+.hero {
+  position: relative;
+  text-align: center;
+  vertical-align: middle;
+  height: 500px;
+}
+
+.hero__bg-container {
+  height: 100%;
+  background: url('http://mugh.net/assets/img/bg.jpg') no-repeat;
+}
+
+.hero__bg-container-overlay {
+  //background: rgba(0,0,0,0.3);
+  position: relative;
+  top: 50%;
+  left: 0;
+  color: #ffffff;
+  text-align: center;
+  padding: 1em 0;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+
+  h1 {
+    font-size: 1.6rem;
+    color: #fff;
+    font-weight: 100;
+    line-height: 150%;
+
+    @media only screen and (min-width: 32rem) {
+      font-size: 2.3rem;
+    }
+
+    @media only screen and (min-width: 48rem) {
+      font-size: 2.7rem;
+    }
+
+    @media only screen and (min-width: 64rem) {
+      font-size: 3rem;
+    }
+  }
+
+  h3 {
+    font-size: 1rem;
+    color: #fff;
+    font-weight: 100;
+    line-height: 110%;
+    letter-spacing: 0.2rem;
+  }
+}
