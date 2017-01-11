@@ -1,0 +1,271 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+@font-face{
+    font-family: 'Roboto';
+    src: url('fonts/Roboto-Regular-webfont.eot');
+    src: url('fonts/Roboto-Regular-webfont.eot?iefix') format('eot'),
+    url('fonts/Roboto-Regular-webfont.woff') format('woff'),
+    url('fonts/Roboto-Regular-webfont.ttf') format('truetype'),
+    url('fonts/Roboto-Regular-webfont.svg#webfont') format('svg');
+}
+
+@font-face{
+    font-family: 'RobotoSlab';
+    src: url('fonts/RobotoSlab-Regular-webfont.eot');
+    src: url('fonts/RobotoSlab-Regular-webfont.eot?iefix') format('eot'),
+    url('fonts/RobotoSlab-Regular-webfont.woff') format('woff'),
+    url('fonts/RobotoSlab-Regular-webfont.ttf') format('truetype'),
+    url('fonts/RobotoSlab-Regular-webfont.svg#webfont') format('svg');
+}
+
+body {
+    font-family: 'Roboto';
+    color: #848484;
+    background: #ffffff;
+}
+
+.container {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    height: 110px;
+    color: #848484;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+header .logo {
+    padding-top: 20px;
+    height: 50px;
+}
+
+header .logo .name {
+    font-size: 20px;
+}
+
+header nav {
+    height: 60px;
+    font-size: 14px;
+}
+
+header nav ul {
+    overflow: hidden;
+}
+
+header nav ul li {
+    border-left: 0;
+    display: inline-block;
+    left: auto;
+    margin: 0 20px;
+    opacity: 1;
+    padding: 15px 0;
+    position: static;
+    color: #444;
+    list-style-type: none;
+    line-height: 22px;
+}
+
+header nav ul li a {
+    color: #848484;
+    text-decoration: none;
+}
+
+header nav ul li a:hover, header nav ul li a:active {
+    text-decoration: none;
+    border-bottom: 2px solid #448aff;
+    padding: 15px 0;
+    color: #448aff;
+}
+
+section .content {
+    width: 60%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 30px;
+}
+
+section .content h2 {
+    font-family: 'RobotoSlab';
+    font-size: 38px;
+    line-height: 48px;
+    padding-bottom: 30px;
+    letter-spacing: -0.1px;
+    color: #444444;
+}
+
+.main #banner {
+    height: 350px;
+    background: #448aff;
+    color: #ffffff;
+    padding-top: 120px;
+}
+
+.main #banner .content {
+    padding-top: 0;
+}
+
+.main #banner .content h1 {
+    font-family: 'RobotoSlab';
+    font-size: 38px;
+    letter-spacing: -0.2px;
+    line-height: 58px;
+    margin-bottom: 20px;
+}
+
+.main #banner .content p {
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.main #about {
+    height: 350px;
+    color: #848484;
+}
+
+.main #about .content p {
+    font-size: 15px;
+    line-height: 23px;
+    text-align: justify;
+    padding-bottom: 15px;
+}
+
+.main #about .content p a, .main #about .content p a:visited {
+    text-decoration: none;
+    color: #848484;
+}
+
+.main #about .content p a:hover {
+    text-decoration: none;
+    color: #448aff;
+}
+
+.main #agenda {
+    height: 580px;
+    background: #FF5252;
+    color: #ffffff;
+}
+
+.main #agenda .content h2 {
+    color: white;
+}
+
+.main #agenda .content table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border: 1px solid #ffffff;
+    font-size: 1em;
+}
+
+.main #agenda .content table tr {
+    height: 50px;
+}
+
+.main #agenda .content table td, .main #agenda .content table th {
+    text-align: left;
+    border: 1px solid #ffffff;
+    padding: 10px;
+    line-height: 20px;
+}
+
+.main #agenda .content table td a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.main #agenda .content table td a:hover {
+    color: #448aff;
+}
+
+.main #registration {
+    height: 400px;
+}
+
+.main #venue {
+    height: 600px;
+    background: #f6f6f6;
+}
+
+.main #venue .content .map {
+    width: 100%
+    /*float: right;*/
+}
+
+.main #social {
+    background: #444444;
+    height: 200px;
+}
+
+.main #social p {
+    color: #a3a3a3;
+}
+
+.main #social a, .main #social a:hover {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+footer {
+    height: 50px;
+    line-height: 50px;
+    text-align: right;
+    font-size: 16px;
+    padding-right: 15px;
+    color: #444444;
+}
